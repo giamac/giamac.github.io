@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-body {font-family: 'Monterrat', sans-serif;}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {font-family: 'Oswald', sans-serif;}
 body2 {
   background: repeating-linear-gradient(
     45deg,
@@ -22,18 +22,20 @@ body3 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 40%;
 }
 div.header {
-  background: url('background.jpg') no-repeat center center fixed;
+  background-color: #ffa359;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 40%;
 }
 
-div.header_text {
+div.header_content {
   color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 div.text1 {
   background-color: #f1f1f1;
