@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <title> Gianluca Macauda </title>
 
     <link href = "main.css" rel = "stylesheet" type = "text/css" />
@@ -20,7 +22,7 @@
 
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" >
 
     <!-- Navigation -->
 
@@ -31,16 +33,23 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapse_target">
-        <a class="navbar-brand" href="#">Gianluca Macauda</a>
+        <a class="navbar-brand" href="#"><i class='fas fa-cloud-sun' style='font-size:20px'>&nbsp</i>Gianluca Macauda</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#research">
+              <i class='fas fa-flask' style='font-size:18px'>&nbsp</i>Research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#content">Content</a>
+            <a class="nav-link" href="#publications"><i class='fas fa-edit' style='font-size:18px'>&nbsp</i>Publications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#"><i class='fas fa-user-graduate' style='font-size:18px'>&nbsp</i>Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class='fas fa-satellite-dish' style='font-size:18px'>&nbsp</i>Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class='fas fa-envelope' style='font-size:18px'>&nbsp</i>Contact</a>
           </li>
         </ul>
       </div>
@@ -52,81 +61,88 @@
       <div class="header_content">
         <div class = "container">
         <div class="row">
-          <div class="col"><img src="gm.jpg" class="rounded-circle" alt="GM" width = "150" height = "150"></div>
-          <div class="col-10">
-        <h1>Willkommen!</h1>
-        <p>Lorem ipsum dolor sit amet</p>
-      >Social media logos!
+          <div class="col-1"></div>
+          <div class="col-lg-3 text-center text-lg-left">
+            <img src="gm.png"  style=" transform: rotate(355deg);" alt="GM" width = "200" height = "200"></div>
+
+        <div class="col-lg-3 text-center text-lg-left">
+        <h2>Dear visitor</h2>
+        <p>Wellcome to the Homepage of<br><i>Gianluca Macauda</i></p>
+
+        <p>
+      <a class='header' href="https://github.com/giamac" target = "blank"><i class='fab fa-github' style='font-size:22px'></i></a>
+
+      <a class='header' href="https://twitter.com/giamacau" target = "blank"><i class='fab fa-twitter' style='font-size:22px'></i></a>
+
+      <a class='header' href="https://ch.linkedin.com/in/macauda-gianluca-ba99b694" target = "blank"><i class='fab fa-linkedin' style='font-size:22px'></i></a>
+
+      <a class='header' href="https://scholar.google.com/citations?user=wB7_CcYAAAAJ&hl=en" target = "blank"><i class='ai ai-google-scholar' style='font-size:22px'></i></a>
+
+      <a class='header' href="https://orcid.org/0000-0001-9394-4657" target = "blank"><i class='ai ai-orcid' style='font-size:22px'></i></a>
+
+      <a class='header' href="https://osf.io/v89g4/" target = "blank"><i class='ai ai-osf' style='font-size:22px'></i></a>
+    </p>
+  </div>
+  <!-- <div class="col-lg-4 text-center text-lg-right">
+    <img style=" transform: rotate(5deg);" src="header_pic.png" alt="GM" width = "200" height = "200">
+  </div> -->
+
+</div>
+  </div>
+</div>
+
+
     </div>
+  </div>
+    </div>
+
+    <div w3-include-html="research.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
+
+<section id = "publications" class="trapezoid"style="
+    background-color: #005ca6;
+    clip-path: polygon(0 2vw,
+      100% 0,
+      100% 100%,
+      0 calc(100% - 2vw)
+    );
+    padding: calc(2vw + 1rem) 0;
+    color: #f2f2f2;">
+
+<div w3-include-html="publications.html"></div>
+
+<script>
+  w3IncludeHTML();
+</script>
+
+</section>
+
+<section id="contact">
+  <div w3-include-html="contact.html"></div>
+
+  <script>
+    w3IncludeHTML();
+  </script>
+
+  <!--Footer-->
+    <footer class="footer bg-dark py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 text-center text-sm-right">
+        <i class="fa fa-copyright"></i>
+        2019
+      </div>
+        <div class="col-sm-5 text-center text-sm-left">
+        Powered by Bootstrap
+      </div>
+          <div class="col-sm-1 text-center text-sm-right">
+        <a class="navbar-brand" href="#"><i align = "right" class='fas fa-angle-up' style='font-size:20px'></i></a>
       </div>
     </div>
   </div>
-    </div>
+    </footer>
 
-      <div class="text1" id = "about">
-        <div class="container">
-      <h1>About</h1>
-      <p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque rhoncus eros, quis bibendum arcu dapibus eu. Pellentesque vitae ipsum sed libero molestie faucibus. Morbi nulla sem, imperdiet eu magna id, lacinia egestas turpis. Quisque non rhoncus eros. Integer non risus pulvinar, facilisis quam vitae, gravida dolor. Duis eget vestibulum neque. Nam nec lorem gravida dolor lobortis ultricies. Nunc pulvinar mauris nec metus dignissim finibus. Phasellus nibh magna, pharetra accumsan vestibulum quis, tempus quis massa. Sed interdum risus in euismod eleifend. Aenean ultricies volutpat imperdiet. Vestibulum pellentesque porttitor nisi, eu luctus eros luctus ut. Nullam venenatis nunc non suscipit scelerisque. Suspendisse nec dui at ligula rhoncus venenatis in in est. Donec arcu leo, lobortis sed blandit in, mollis id mi. Fusce at malesuada arcu.
-
-Nam accumsan est id mollis congue. Vivamus convallis nulla non ex consectetur volutpat. Nunc id arcu in odio accumsan sagittis. Sed neque sem, pretium at mauris eget, vestibulum ullamcorper nisl. Proin fermentum tristique lorem, in pulvinar lacus. Vestibulum ultricies erat ac nunc pretium pharetra. Fusce dictum dolor erat, ac dictum elit rhoncus sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed finibus quis odio nec aliquam.
-
-Donec vulputate leo turpis, porttitor facilisis tortor feugiat a. Vestibulum tempus rutrum odio a pulvinar. Maecenas scelerisque gravida lobortis. Nam mi nisl, auctor in erat at, convallis blandit dolor. Aenean molestie neque vitae massa tincidunt mattis ut vel magna. Pellentesque quis mollis ligula. Aliquam efficitur libero eu arcu rhoncus malesuada.
-
-Aliquam ac ante sed odio hendrerit semper. Aliquam vitae eleifend magna, nec pharetra enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel nunc massa. Fusce ornare sapien in urna pulvinar, eu pellentesque ex scelerisque. Integer cursus nulla purus, a pulvinar neque pharetra ac. Nulla ac sollicitudin tortor, ac tristique mi. Duis laoreet elementum congue. Fusce euismod sed ligula sit amet finibus. Etiam felis ligula, feugiat ut ultrices ut, iaculis in risus. Aenean id dolor interdum, volutpat tortor non, dignissim augue.
-
-Mauris ultricies mi nec dignissim vulputate. Mauris pretium diam vel placerat venenatis. Sed mollis quam augue. Sed quam mi, porta eu felis ac, commodo vehicula leo. Quisque vel gravida massa. Curabitur interdum commodo est ac porttitor. Ut ac leo eu quam aliquam aliquam. Aliquam nec augue nisi. Suspendisse ex nulla, malesuada id dolor imperdiet, dictum commodo ipsum. In consectetur porttitor tempor. Vivamus commodo mollis velit at bibendum. Suspendisse fringilla gravida eleifend. Curabitur a lectus odio.
-
-Etiam non ipsum feugiat, sollicitudin nulla non, fringilla dui. Cras tortor nunc, feugiat eu pulvinar sed, consectetur eu justo. Phasellus ut auctor justo. Pellentesque congue auctor magna vel semper. Phasellus faucibus, eros quis commodo consequat, urna nibh malesuada magna, ut tincidunt arcu magna eu neque. Nullam sit amet turpis pharetra, posuere massa et, aliquam sapien. Etiam massa eros, ornare eu lacinia eu, fermentum et diam. Vivamus imperdiet lorem sed quam maximus sodales. Sed interdum fringilla nulla, sed pulvinar quam. Mauris et mauris lacus.
-
-Integer non mauris enim. Maecenas id ultrices odio. Integer lobortis nulla iaculis facilisis ullamcorper. Fusce venenatis diam et metus eleifend sodales. Vivamus bibendum nunc vel pretium suscipit. Donec in sodales ipsum. Sed fringilla ligula libero, at dapibus est malesuada quis. Duis fringilla diam ut risus gravida rutrum. Donec volutpat ipsum libero, ac hendrerit quam pretium vitae. Sed laoreet mi at libero faucibus, nec imperdiet eros varius. Morbi at tristique lacus, ac maximus diam. Vestibulum maximus vitae risus a sollicitudin. Pellentesque ut dui tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla faucibus blandit dictum.
-
-Cras scelerisque elit vitae odio volutpat cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris nec sapien fringilla, tincidunt velit id, sagittis arcu. Quisque ac mattis sapien. Quisque faucibus neque tellus, eget efficitur ex congue et. Nullam vitae auctor ante, ac iaculis purus. Nulla cursus, augue sed ullamcorper tincidunt, orci lacus consequat purus, lacinia volutpat turpis sapien at velit. Maecenas neque tortor, vehicula a pellentesque vel, tristique id odio. Pellentesque ac nunc ac nisl lacinia tincidunt. Cras elementum tincidunt metus, ac consectetur orci luctus ut. Sed mattis tristique nisl eu gravida. Integer sodales dolor et viverra sollicitudin.
-
-Sed vel nisi id orci laoreet ultricies. Nam lacinia feugiat odio, sit amet fermentum justo tincidunt nec. Duis cursus neque turpis, a iaculis velit ullamcorper vitae. Sed pharetra tincidunt libero eu tincidunt. Suspendisse vitae turpis congue, molestie tortor et, imperdiet nisl. Nulla luctus urna risus, vel ornare enim posuere eget. Donec rhoncus quam ut porttitor egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer dictum augue ut sollicitudin mollis. Fusce in lacus vel urna facilisis sollicitudin.
-
-Pellentesque massa nulla, consectetur vitae ligula vitae, egestas fringilla orci. In auctor vitae augue consequat commodo. Proin et erat lobortis, auctor neque id, fermentum neque. Donec eget cursus tortor, id dapibus lectus. Donec ultricies vulputate mollis. Mauris a malesuada mauris. Praesent vulputate, nisi id malesuada cursus, ligula metus blandit est, a pellentesque odio velit vitae quam. Sed auctor velit quis eros volutpat facilisis. Nulla semper in felis et tristique. Phasellus at sodales erat, accumsan dapibus ex. Vestibulum ornare pharetra scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam venenatis maximus felis in molestie. Maecenas aliquam fermentum lobortis.
-
-Etiam nec commodo tellus, dignissim aliquam sem. Fusce vulputate pulvinar urna aliquet luctus. Donec ac dictum metus. Morbi rutrum sodales urna, vitae egestas metus rhoncus eget. Donec ut euismod magna. Vivamus sit amet est hendrerit, venenatis magna nec, consectetur nisl. In lectus arcu, facilisis in lacinia vel, vehicula id mauris. Nulla sit amet auctor ipsum. Mauris porta malesuada augue in semper. Morbi eu ex mi. Phasellus risus lorem, gravida eu aliquam eu, laoreet quis quam. Sed bibendum metus quis ultrices posuere.
-
-Aenean et ornare turpis, mattis pretium tellus. Phasellus sagittis nisl ut ipsum consequat, eu eleifend sem commodo. Mauris laoreet nisi non sollicitudin vehicula. Maecenas vel euismod sem, auctor blandit neque. Donec erat est, fringilla sed lacus consequat, tincidunt finibus urna. Nulla pharetra laoreet ipsum vel mattis. Duis bibendum diam venenatis nulla aliquet, vitae convallis dui finibus. Praesent eget risus sapien. Nulla ante metus, congue ac venenatis in, euismod sed ligula. Curabitur tellus nulla, lobortis quis elit ut, gravida efficitur leo. Morbi metus velit, molestie sit amet tristique a, dictum lacinia mi. Aenean sodales facilisis eleifend. Cras egestas, ligula elementum gravida sollicitudin, justo lacus vestibulum lectus, id gravida libero urna quis tellus. Ut dui dolor, ullamcorper sed tincidunt a, consequat eu orci. Pellentesque rhoncus venenatis lectus, nec imperdiet eros convallis vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Suspendisse varius, enim eget tincidunt condimentum, augue odio auctor sem, vel laoreet urna sem ut justo. In eu molestie dolor, a elementum ex. Etiam eget ante et sem rutrum euismod id luctus est. Donec efficitur justo eros, in condimentum diam tristique ac. In pharetra ut libero id lacinia. Aliquam nisi magna, facilisis ut nisi sed, ultrices sodales tellus. Fusce consectetur diam placerat venenatis tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis pretium consectetur fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut orci vel felis sagittis ullamcorper. Pellentesque tincidunt ligula et magna sodales lobortis. Aenean placerat dui et elit mollis blandit. Proin imperdiet nibh a ante iaculis interdum. Vestibulum ac ultricies lacus, in pellentesque metus.
-
-Nullam ut mollis lacus. Donec faucibus quis sapien id sagittis. Morbi consequat nisi eros, vitae laoreet ligula porttitor et. Etiam tortor tellus, sagittis sed lacinia et, sodales a diam. Etiam ullamcorper porta fermentum. Vestibulum lacinia est nec imperdiet rhoncus. Sed tincidunt lectus ac nisl suscipit rutrum. Sed ullamcorper metus sed tellus egestas semper. Donec a finibus nulla. Aenean consectetur ex sit amet dolor egestas, sit amet sodales risus fringilla. Fusce sit amet tortor placerat, lobortis felis nec, lacinia turpis. Donec convallis risus neque, porttitor porta lectus convallis vel. Fusce velit odio, feugiat sed pellentesque in, interdum quis tortor. Maecenas nec quam posuere, iaculis mauris et, dapibus magna. Curabitur tincidunt odio ligula, nec facilisis erat laoreet id.
-
-Suspendisse potenti. Nullam dui nunc, commodo vitae condimentum eget, auctor non eros. Donec consequat lorem in bibendum pulvinar. Pellentesque placerat augue neque, sit amet laoreet augue luctus a. Ut fringilla arcu efficitur nisi aliquam, in fringilla felis auctor. Phasellus nec mi at lacus imperdiet fermentum et nec nibh. Donec venenatis nulla et urna scelerisque, a posuere felis vulputate. Suspendisse ut tortor tincidunt, iaculis dui ac, pretium justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi et neque a sapien vehicula hendrerit.
-
-Etiam ac purus in risus elementum congue non in mauris. Cras et pretium enim. Integer laoreet eget tellus ut elementum. Maecenas et sagittis eros. Nullam ultrices vel libero vitae volutpat. Cras rhoncus maximus lorem tempor porta. Nam ultricies id odio in dapibus. Duis accumsan elementum dolor.
-
-Quisque rutrum mi sit amet nunc euismod commodo. Aenean imperdiet condimentum viverra. Etiam et viverra erat. Etiam vulputate nibh at cursus aliquet. Etiam metus odio, rhoncus nec pharetra nec, porta eget erat. Maecenas aliquet, odio in facilisis feugiat, ligula mi ornare libero, at tempus massa nibh eu magna. Vestibulum molestie nisi sit amet enim dictum, sit amet posuere massa cursus. Suspendisse quis hendrerit tellus. Aenean lorem nunc, tincidunt pulvinar interdum quis, accumsan non magna. Morbi nec faucibus ipsum, nec eleifend magna. Ut vitae leo turpis. Vivamus sit amet faucibus erat. Praesent ligula est, ultrices faucibus accumsan at, condimentum vel dolor.
-
-Duis id varius arcu, ut dapibus enim. Morbi quis augue in neque imperdiet tempus. Mauris faucibus mollis tortor sit amet ultrices. Sed tempus mauris leo, sed scelerisque libero rhoncus ut. Suspendisse eget dui quam. Ut ac est fringilla, malesuada arcu in, porta risus. Mauris sed erat scelerisque velit accumsan consectetur. Nam maximus justo at ex facilisis, nec congue enim sagittis. Phasellus sed commodo lorem. Sed quis pretium nibh. Curabitur eget cursus dui. Aliquam ligula metus, luctus commodo ligula sit amet, pretium gravida massa. Phasellus finibus, mi ut maximus convallis, eros lacus tempor diam, et suscipit ipsum ante sit amet risus. Quisque suscipit posuere erat a eleifend.
-
-Fusce tortor nibh, luctus vitae enim at, molestie scelerisque tortor. Aenean felis est, cursus non dui eget, bibendum interdum magna. Nullam in sollicitudin nisl. In tellus metus, tempus ut rutrum quis, consequat in augue. Morbi non urna at odio bibendum placerat. Praesent accumsan dolor a tristique venenatis. Proin sollicitudin viverra purus vitae viverra.
-
-Pellentesque tempor bibendum nunc at venenatis. Sed quam tortor, aliquet sit amet mi eu, viverra rhoncus turpis. Aenean sed lacus orci. Quisque laoreet consectetur arcu, nec euismod elit pulvinar nec. Sed quis mi accumsan, efficitur massa non, imperdiet ex. Aliquam accumsan aliquet lacus aliquam pellentesque. Phasellus ultrices fermentum lectus porttitor convallis. Pellentesque fringilla euismod porta. </p>
-</div>
-</div>
-
-    <div class="text1" id="content">
-      <div class="container">
-      <h1>Content</h1>
-      <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-</div>
-  </div>
-
-  <!--Footer-->
-<!--
-  <nav class="navbar navbar-expand-sm py-3 bg-dark navbar-dark fixed-bottom">
-    <span class="navbar-text">
-        Created with Bootstrap
-      </span>
-  </nav>
   </body>
--->
-</div>
-<html>
+</html>
