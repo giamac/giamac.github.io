@@ -22,12 +22,13 @@ body3 {
   background: url('background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  background-size: co;
   -o-background-size: cover;
   height: 40%;
 }
 div.header {
   background-color: #005ca6;
+  background: url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
